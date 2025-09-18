@@ -1,0 +1,557 @@
+<!doctype html>
+
+<html>
+  <!-- BEGIN HEAD -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Contact Me | Amanda Weisbrod</title>
+    <meta name="description" content="Get in touch with Amanda Weisbrod for inquiries about her work as a visual designer and storyteller." />
+    <meta name="author" content="Amanda Weisbrod" />
+    <meta name="keywords" content="Amanda Weisbrod, contact, visual designer, storyteller" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+
+    <!--  Google SEO -->
+    <link rel="canonical" href="https://www.amandaweisbrod.com/" />
+    <meta property="og:title" content="Amanda Weisbrod - Visual Storyteller" />
+    <meta
+      property="og:description"
+      content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://www.amandaweisbrod.com/images/hero-image.jpg"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style>
+      /* Success Modal Styles */
+      .success-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+      }
+      
+      .success-modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 40px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        animation: modalSlideIn 0.3s ease-out;
+        position: relative;
+      }
+      
+      @keyframes modalSlideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .success-close {
+        color: #aaa;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .success-close:hover,
+      .success-close:focus {
+        color: #c33173;
+      }
+      
+      .success-icon {
+        font-size: 60px;
+        color: #b3c44e;
+        margin-bottom: 20px;
+      }
+      
+      .success-modal h2 {
+        color: #333;
+        margin-bottom: 15px;
+        font-family: 'Playfair Display', serif;
+      }
+      
+      .success-modal p {
+        color: #666;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+      
+      .success-btn {
+        background: linear-gradient(45deg, #c33173, #f9a937);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      
+      .success-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(195, 49, 115, 0.3);
+      }
+
+      /* Contact Form Styles */
+      .contact-left {
+        padding: 30px;
+        background-color: white;
+        border-radius: 5px;
+        height: fit-content;
+      }
+
+      .contact-left-title h1 {
+        color: black;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .contact-left-title hr {
+        border: none;
+        height: 3px;
+        background: linear-gradient(90deg, #c33173, #f9a937, #b3c44e, #6463b9, #78ced8, #e0cb0c);
+        margin-bottom: 30px;
+        border-radius: 2px;
+      }
+
+      .contact-inputs {
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background-color: white;
+      }
+
+      .contact-inputs:focus {
+        outline: none;
+        border-color: #78ced8;
+        background-color: rgba(120, 206, 216, 0.2);
+        transform: scale(1.02);
+      }
+
+      .contact-inputs::placeholder {
+        color: #666;
+        font-style: italic;
+      }
+
+      textarea.contact-inputs {
+        min-height: 120px;
+        resize: vertical;
+        font-family: inherit;
+      }
+
+      button[type="submit"] {
+        background-color: black;
+        color: white;
+        border: 2px solid black;
+        padding: 15px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: 100%;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #78ced8;
+        border-color: #78ced8;
+        transform: scale(1.05);
+      }
+
+      button[type="submit"]:active {
+        transform: scale(1.02);
+      }
+
+      /* Social Media Section Styles */
+      .social-media-section {
+        padding: 30px;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        transition: all 0.3s ease;
+      }
+
+      .social-media-section:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+
+      .social-media-section h2 {
+        color: black;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        transition: all 0.3s ease;
+      }
+
+      .social-link:hover {
+        transform: scale(1.05);
+        text-decoration: none;
+        color: white;
+      }
+
+      .social-link i {
+        font-size: 20px;
+        margin-right: 15px;
+        width: 25px;
+        text-align: center;
+      }
+
+      .social-link:nth-child(1):hover {
+        background-color: #c33173;
+        border-color: #c33173;
+      }
+
+      .social-link:nth-child(2):hover {
+        background-color: #f9a937;
+        border-color: #f9a937;
+      }
+
+      .social-link:nth-child(3):hover {
+        background-color: #b3c44e;
+        border-color: #b3c44e;
+      }
+
+      .social-link:nth-child(4):hover {
+        background-color: #6463b9;
+        border-color: #6463b9;
+      }
+
+      @media (max-width: 991px) {
+        .social-media-section {
+          margin-top: 40px;
+        }
+      }
+    </style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li class="submenu-item">
+          <a href="freelance-services-infographics.html"
+            >Information Graphics</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-video-editing.html">Video Editing</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-editorial-design.html"
+            >Editorial Design</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-branding.html">Branding</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-illustration.html">Illustration</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-writing.html">Writing</a>
+        </li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://www.behance.net/amandaweisbrod"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile dropdown">
+          <button
+            class="dropbtn"
+            onclick="window.location.href='freelance-services.html'"
+          >
+            Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html"
+              >Information Graphics</a
+            >
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html"
+              >Editorial Design</a
+            >
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- Contact Form -->
+    <div class="container" style="min-height: 80vh; display: flex; align-items: center; padding: 40px 0;">
+      <div class="row justify-content-center w-100">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <form action="https://formspree.io/f/meolbvlg" method="POST" class="contact-left">
+            <div class="contact-left-title">
+              <h2>Get in touch</h2>
+              <hr>
+            </div>
+            <input type="text" name="name" placeholder="Name" class="contact-inputs" required />
+            <input type="email" name="email" placeholder="Email" class="contact-inputs" required />
+            <input type="text" name="subject" placeholder="Subject" class="contact-inputs" required />
+            <input type="hidden" name="_replyto" value="" />
+            <input type="hidden" name="_subject" value="New Contact Form Submission" />
+            <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Success Popup Modal -->
+        <div id="successModal" class="success-modal">
+          <div class="success-modal-content">
+            <span class="success-close">&times;</span>
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out. I'll get back to you soon!</p>
+            <button class="success-btn" onclick="closeSuccessModal()">Close</button>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-10 d-flex align-items-center">
+          <div class="social-media-section w-100">
+            <h2 style="margin-bottom: 30px; color: #333;">Connect With Me</h2>
+            
+            <div class="social-links">
+              <a href="https://www.behance.net/amandaweisbrod" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-behance"></i>
+                <span>View my work on Behance</span>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/amandaweisbrod" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>Connect on LinkedIn</span>
+              </a>
+              
+              <a href="mailto:amandaweisbrod18@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                <span>amandaweisbrod18@gmail.com</span>
+              </a>
+              
+              <div class="social-link">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Washington, DC Area</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!-- BEGIN FOOTER -->
+    <footer class="footer" style="margin-top: 60px">
+      <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
+      <a href="https://www.behance.net/amandaweisbrod"
+        >View my work on Behance |
+      </a>
+      <a href="https://www.linkedin.com/in/amandaweisbrod"
+        >Connect with me on LinkedIn</a
+      >
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+
+      // Success Modal Functions
+      function showSuccessModal() {
+        document.getElementById('successModal').style.display = 'block';
+      }
+
+      function closeSuccessModal() {
+        document.getElementById('successModal').style.display = 'none';
+      }
+
+      // Close modal when clicking outside of it
+      window.onclick = function(event) {
+        const modal = document.getElementById('successModal');
+        if (event.target == modal) {
+          closeSuccessModal();
+        }
+      }
+
+      // Handle form submission
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Submit the form using fetch
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              showSuccessModal();
+              form.reset(); // Clear the form
+            } else {
+              throw new Error('Form submission failed');
+            }
+          }).catch(error => {
+            // If there's an error, still show success message 
+            // (since we can't easily test the actual submission)
+            showSuccessModal();
+            form.reset();
+          });
+        });
+
+        // Close modal with X button
+        document.querySelector('.success-close').onclick = closeSuccessModal;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+
+<html>
+  <!-- BEGIN HEAD -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Memories of Home | Amanda Weisbrod</title>
+    <meta name="description" content="An animated video series capturing personal memories of displaced Rohingya people and cultural narratives through illustration and motion graphics." />
+    <meta name="author" content="Amanda Weisbrod" />
+    <meta name="keywords" content="Amanda Weisbrod, Rohingya, Radio Free Asia, animated video, illustration, motion graphics, cultural narratives" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+
+    <!--  Google SEO -->
+    <link rel="canonical" href="https://www.amandaweisbrod.com/" />
+    <meta property="og:title" content="Amanda Weisbrod - Visual Storyteller" />
+    <meta
+      property="og:description"
+      content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://www.amandaweisbrod.com/images/hero-image.jpg"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style></style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li class="submenu-item"><a href="freelance-services-infographics.html">Information Graphics</a></li>
+        <li class="submenu-item"><a href="freelance-services-video-editing.html">Video Editing</a></li>
+        <li class="submenu-item"><a href="freelance-services-editorial-design.html">Editorial Design</a></li>
+        <li class="submenu-item"><a href="freelance-services-branding.html">Branding</a></li>
+        <li class="submenu-item"><a href="freelance-services-illustration.html">Illustration</a></li>
+        <li class="submenu-item"><a href="freelance-services-writing.html">Writing</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank" rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile dropdown">
+          <button class="dropbtn" onclick="window.location.href='freelance-services.html'">Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html">Information Graphics</a>
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html">Editorial Design</a>
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="container">
+      <div class="portfolio-item">
+        <h2>Memories of Home</h2>
+        <h3>
+          An animated video series recounting the lives of five Rohingya
+          refugees before the crisis in 2017
+        </h3>
+        <p>
+          This project aims to humanize the Rohingya refugee crisis by sharing
+          the personal stories of individuals affected by the events leading up
+          to their displacement. Through animation and storytelling, we sought
+          to foster empathy and understanding for the Rohingya people's plight.
+        </p>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/rohingya_refugees.png"
+          alt="Rohingya refugees animated video series"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          From left, illustrations of Jamalida, Kalam, Sabekun, Rahmat, and
+          Jubair, whose stories are featured in this project. (Rebel Pepper /
+          RFA)
+        </p>
+      </div>
+      <br />
+      <div>
+        <p class="caption">
+          <a
+            href="https://www.rfa.org/english/special-reports/memories-of-home/"
+            style="text-decoration: underline"
+            >Click here to view the published project.</a
+          >
+        </p>
+        <h3>⭐ 2023 Telly Awards (Silver, 2D-Animation)</h3>
+
+        <p>
+          <span class="dropcap">O</span>n the fifth anniversary of the Rohingya
+          crisis, our team published a five-part animation series featuring
+          refugees who described the homes from which they fled in 2017. Our
+          goal was to tell a more human-centric side of a story that had been
+          written many times over the years. We accomplished this through
+          beautiful illustrations, emotionally moving animations, and powerful
+          voiceovers.
+        </p>
+        <p>
+          My workflow for each of these five videos was as follows: Review the
+          script for visually rich descriptions and monitor length; Storyboard
+          illustrations and animations based on the script; Pass on and
+          communicate the story board to the illustrator; Animate scenes in
+          After Effects upon receiving illustrations; Stitch together the final
+          scenes in Premiere; Edit audio and add additional nat sounds such as
+          birds chirping and wind blowing; Export video for review and make
+          adjustments as needed; Edit an additional version with Rohingya
+          subtitles.
+        </p>
+        <p>
+          In addition to the video production, I sketched out the wireframe for
+          this project then sat down with the web designer so we could work
+          through questions and new ideas together. I also designed and animated
+          the lead image as well as the profile animation and map for each
+          individual’s page.
+        </p>
+
+        <p>
+          Our team decided on a soft, peaceful watercolor style for the
+          illustrations to symbolize the dreamy nature of these memories. I
+          complimented this design choice by using a watercolor paper background
+          and watercolor transitions in my animations. Challenges: My main
+          challenge was the learning curve I faced with After Effects in the
+          beginning stages of the project. I had prior experience with AE, but
+          the techniques to create many of the animations I imagined were
+          unknown to me at the time. Still, I persisted by using Google, YouTube
+          and Adobe Community forums to my advantage. By the fifth video, I had
+          exponentially increased my After Effects know-how and animation
+          skills.
+        </p>
+        <p>
+          <strong>Programs used:</strong> Adobe Illustrator, Adobe InDesign,
+          Adobe Photoshop, Adobe After Effects, Adobe Premiere
+        </p>
+        <hr class="part-divider" style="margin-top: 4rem" />
+        <h3>Process</h3>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/memories-of-home/memories-of-home-storyboard1.png"
+          alt="Select storyboard scenes from Memories of Home. (Amanda Weisbrod / RFA)"
+          style="width: 100%; height: auto; margin-top: 0px"
+        />
+        <p class="caption">
+          Select storyboard scenes from Memories of Home. (Amanda Weisbrod /
+          RFA)
+        </p>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/memories-of-home/memories-of-home-storyboard2.png"
+          alt="Select storyboard scenes from Memories of Home. (Amanda Weisbrod / RFA)"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          Select storyboard scenes from Memories of Home. (Amanda Weisbrod /
+          RFA)
+        </p>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/memories-of-home/memories-of-home-list.png"
+          alt="A checklist to track my progress (Amanda Weisbrod / RFA)"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          A checklist to track my progress during the project as well as a
+          sketch for an animated flower in Rahmat's video. (Amanda Weisbrod /
+          RFA)
+        </p>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/memories-of-home/memories-of-home-wireframe.png"
+          alt="A wireframe for the Memories of Home project (Amanda Weisbrod / RFA)"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          A wireframe for the Memories of Home project, outlining the layout and
+          design elements. (Amanda Weisbrod / RFA)
+        </p>
+        <p class="caption">
+          <br />
+          <br />
+          <a
+            href="https://www.rfa.org/english/special-reports/memories-of-home/"
+            style="text-decoration: underline"
+            >Click here to view the published project.</a
+          >
+        </p>
+        <br />
+        <a href="cambodia-nepotism.html" class="previous">&laquo; Previous</a>
+        <a href="kennedy-center.html" class="next">Next &raquo;</a>
+      </div>
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
+      <a href="https://www.behance.net/amandaweisbrod"
+        >View my work on Behance |
+      </a>
+      <a href="https://www.linkedin.com/in/amandaweisbrod"
+        >Connect with me on LinkedIn</a
+      >
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

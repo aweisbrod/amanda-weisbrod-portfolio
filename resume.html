@@ -1,0 +1,628 @@
+<!doctype html>
+
+<html>
+  <!-- BEGIN HEAD -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Resume | Amanda Weisbrod</title>
+    <meta name="description" content="Amanda Weisbrod's resume showcasing her skills, experience, and education in visual storytelling and design." />
+    <meta name="author" content="Amanda Weisbrod" />
+    <meta name="keywords" content="Amanda Weisbrod, resume, visual storytelling, design, skills, experience, education" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+
+    <!--  Google SEO -->
+    <link rel="canonical" href="https://www.amandaweisbrod.com/" />
+    <meta property="og:title" content="Amanda Weisbrod - Visual Storyteller" />
+    <meta
+      property="og:description"
+      content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://www.amandaweisbrod.com/images/hero-image.jpg"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .background-image {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+          url(images/tarot-background.jpg);
+        background-repeat: repeat-y;
+        background-size: contain;
+        margin: 0;
+        padding: 0;
+      }
+
+      .resume-header {
+        margin: 20px 40px;
+        color: white;
+        padding-right: 60%;
+      }
+
+      .resume-header h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .resume-header h3 {
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      /* The actual timeline (the vertical ruler) */
+      .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* The actual timeline (the vertical ruler) */
+      .timeline::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: 0;
+      }
+
+      /* Container around content */
+      .timeline-container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+      }
+
+      /* The circles on the timeline */
+      .timeline-container::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -12.5px;
+        background-color: white;
+        border: 4px solid #c33173;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      /* Place the container to the left */
+      .left {
+        left: 0;
+      }
+
+      /* Place the container to the right */
+      .right {
+        left: 50%;
+      }
+
+      /* Add arrows to the left container (pointing right) */
+      .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+      }
+
+      /* Add arrows to the right container (pointing left) */
+      .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+
+      /* Fix the circle for containers on the right side */
+      .right::after {
+        left: -12.5px;
+      }
+
+      /* The actual content */
+      .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px;
+      }
+
+      /* Media queries - Responsive timeline on screens less than 600px wide */
+      @media screen and (max-width: 600px) {
+        /* Place the timelime to the left */
+        .timeline::after {
+          left: 31px;
+        }
+
+        /* Full-width containers */
+        .timeline-container {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+        }
+
+        /* Make sure that all arrows are pointing leftwards */
+        .timeline-container::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+
+        /* Make sure all circles are at the same spot */
+        .left::after,
+        .right::after {
+          left: 18.5px;
+        }
+
+        /* Make all right containers behave like the left ones */
+        .right {
+          left: 0%;
+        }
+
+        /* Header responsive adjustment */
+        .resume-header {
+          margin: 20px 60px;
+          padding: 0px;
+        }
+      }
+    </style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical (Mobile) Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li class="submenu-item">
+          <a href="freelance-services-infographics.html"
+            >Information Graphics</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-video-editing.html">Video Editing</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-editorial-design.html"
+            >Editorial Design</a
+          >
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-branding.html">Branding</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-illustration.html">Illustration</a>
+        </li>
+        <li class="submenu-item">
+          <a href="freelance-services-writing.html">Writing</a>
+        </li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://www.behance.net/amandaweisbrod"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile dropdown">
+          <button
+            class="dropbtn"
+            onclick="window.location.href='freelance-services.html'"
+          >
+            Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html"
+              >Information Graphics</a
+            >
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html"
+              >Editorial Design</a
+            >
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- TIMELINE -->
+    <div class="background-image">
+      <div class="timeline">
+        <div class="resume-header">
+          <h2>My Experience</h2>
+          <h3>
+            From reporter and editor to designer and multimedia artist, I've
+            worn many hats in the creative field.
+          </h3>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2018 – Present</h2>
+            <h3>Freelance Designer & Writer — Weisbrod Visuals, LLC</h3>
+            <p>
+              &#9670; Designing branding materials (logos, style guides, motion
+              graphics, videos, PowerPoint presentations, infographics, etc.)
+              and editorial print publication layouts <br /><br />&#9670;
+              Writing articles, copy, and scripts for a variety of clients.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2022 – 2025</h2>
+            <h3>Graphic Designer — Radio Free Asia</h3>
+            <p>
+              &#9670; Designing data visualizations, infographics, photo
+              illustrations, maps and motion graphics for daily and long-term
+              creative visual storytelling projects <br /><br />&#9670; Building
+              content-driven interactive articles using HTML, CSS, ai2html,
+              Datawrapper and Javascript <br /><br />&#9670; Performing data
+              analysis on international datasets from multiple sources for
+              complex data visualizations <br /><br />&#9670; Building and
+              managing RFA’s inaugural social media graphics template library to
+              promote consistent brand design across platforms
+              <br /><br />&#9670; Editing short-form videos for social media
+              <br /><br />&#9670; Collaborating with colleagues across ten
+              newsrooms <br /><br />&#9670; Sketching and designing wireframes
+              in Figma to convey complex interactive story ideas
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2021 – 2022</h2>
+            <h3>Multimedia Designer — Beacon for Schools</h3>
+            <p>
+              &#9670; Storyboarding, filming, editing, and creating motion
+              graphics for educational videos <br /><br />&#9670; Designing
+              wireframes to tell the story of the brand through consistent style
+              and visuals <br /><br />&#9670; Rebranding logos and color
+              palettes <br /><br />&#9670; Designing on-brand icons
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2020 – 2022</h2>
+            <h3>M.A. in Interactive Design & Infographics</h3>
+            <p>Ohio University, School of Visual Communication</p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2020</h2>
+            <h3>Teaching Assistant — Ohio University</h3>
+            <p>
+              &#9670; Instructing undergraduate students about color theory,
+              typography and other design principles <br /><br />&#9670;
+              Offering feedback, inspiration and mentorship so students may grow
+              their design skills <br /><br />&#9670; Leading peer reviews and
+              encouraging pupils to offer their own feedback in order to
+              reinforce learned design principles
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2019</h2>
+            <h3>
+              Lead Designer, Reporter, Co-Editor — <br />The Observer Newspaper
+            </h3>
+            <p>
+              &#9670; Designing 10–20 newspaper layouts a week
+              <br /><br />&#9670; Covering beats on breaking news,
+              entertainment, healthcare, science, environment, politics,
+              business, city hall and people-centered features
+              <br /><br />&#9670; Leading and participating in discussions about
+              daily and long-term coverage <br /><br />&#9670; Reworking
+              existing style guides <br /><br />&#9670; Copyediting and proofing
+              the publication on a tight deadline three times a week
+              <br /><br />&#9670; Interviewing and gathering a pool of regular
+              sources
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2018</h2>
+            <h3>Editorial Intern — On Tap Magazine</h3>
+            <p>
+              &#9670; Writing feature articles on local news, food, events,
+              entertainment, environment, and culture <br /><br />&#9670;
+              Researching and reporting on indepth topics such as the
+              environmental effects of textile waste <br /><br />&#9670;
+              Designing infographics, data visualizations and magazine spreads
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2015 – 2018</h2>
+            <h3>Reporter, Designer — The Post</h3>
+            <p>
+              &#9670; Pitching, researching and writing indepth, human interest
+              feature stories based in research and told through a narrative
+              lens
+              <br /><br />&#9670; Reporting on events and local news relevant to
+              Ohio University and the city of Athens while on a tight deadline
+              <br /><br />&#9670; Designing newspaper spreads and infographics
+              for accompanying articles according to brand guidelines while on a
+              tight deadline
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2014 — 2017</h2>
+            <h3>Associate Editor, Designer — Backdrop Magazine</h3>
+            <p>
+              &#9670; Pitching, researching and designing standalone
+              infographics and data visualizations <br /><br />&#9670; Writing
+              indepth feature stories on complex topics based in research and
+              told through a narrative, human-centric lens <br /><br />&#9670;
+              Designing magazine spreads and accompanying infographics for
+              articles according to brand guidelines <br /><br />&#9670;
+              Coaching writers and designers in journalism and design practices
+              <br /><br />&#9670; Fact-checking and editing stories with AP
+              Style
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2017</h2>
+            <h3>Editorial Intern — CityBeat Magazine</h3>
+            <p>
+              &#9670; Reporting and writing articles about local news, culture
+              and events <br /><br />&#9670; Gathering, interviewing, and
+              nurturing positive working relationships with a pool of regular
+              news sources <br /><br />&#9670; Managing Wordpress and posting
+              articles to the website
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2016</h2>
+            <h3>Editorial Intern — The Athens Messenger</h3>
+            <p>
+              &#9670; Reporting on local news and events <br /><br />&#9670;
+              Writing news and feature stories <br /><br />&#9670; Gathering,
+              interviewing, and nurturing positive working relationships with a
+              pool of regular news sources <br /><br />&#9670; Designing spreads
+              for the newspaper’s monthly magazine <br /><br />&#9670; Working
+              with photographers in the field
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2015</h2>
+            <h3>
+              Yearbook Author and Designer, Blogger — <br />Ohio University
+              Marching 110
+            </h3>
+            <p>
+              &#9670; Establishing the Marching 110’s first-ever blog to engage
+              alumni and current members in current events <br /><br />&#9670;
+              Interviewing alumni and current Marching 110 members about their
+              experience in the band <br /><br />&#9670; Writing a weekly
+              500–1,000 word blog post about themed topics <br /><br />&#9670;
+              Writing copy for the 80-page 2015 program about the season’s
+              notable events <br /><br />&#9670; Designing a full-spread
+              infographic timeline featuring important events in the band’s
+              history and the evolution of its uniforms
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container left fade-in-element">
+          <div class="content">
+            <h2>2015</h2>
+            <h3>Editorial Intern — Cincinnati Magazine</h3>
+            <p>
+              &#9670; Communicating with sources and building positive working
+              relationships <br /><br />&#9670; Fact-checking and editing
+              stories with AP Style <br /><br />&#9670; Reporting and writing
+              articles about local news, culture and events
+            </p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2014 – 2018</h2>
+            <h3>B.S. in Journalism</h3>
+            <p>Ohio University, E.W. Scripps School of Journalism</p>
+          </div>
+        </div>
+        <div class="timeline-container right fade-in-element">
+          <div class="content">
+            <h2>2011 — 2014</h2>
+            <h3>Feature Editor, Designer — Spark Newsmagazine</h3>
+            <p>
+              &#9670; Designing infographics, magazine spreads and newspaper
+              layouts for a national-award winning publication
+              <br /><br />&#9670; Researching and reporting on several indepth
+              topics such as cancer, teen pregnancy, gender roles and heart
+              disease <br /><br />&#9670; Coaching writers and designers in
+              journalism and design practices <br /><br />&#9670; Collaborating
+              with a 100-member staff to produce a monthly 90-page newsmagazine
+              <br /><br />&#9670; Writing indepth feature articles including
+              personality sketches, human interest stories and first-person
+              narratives <br /><br />&#9670; Writing pieces for sports, opinion,
+              news and entertainment sections <br /><br />&#9670; Fact-checking
+              and editing stories with AP Style <br /><br />&#9670; Studying and
+              adhering to journalism law, ethics and best practices
+              <br /><br />&#9670; Received multiple statewide awards including:
+              2012 Quill & Scroll Feature Writing Sweepstakes Winner; Four Quill
+              & Scroll Gold Keys; Quill & Scroll Edward J. Neil Scholarship; JEA
+              Journalist of the Year Honorable Mention for Ohio
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer class="footer" style="margin-top: 0">
+      <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
+      <a href="https://www.behance.net/amandaweisbrod"
+        >View my work on Behance |
+      </a>
+      <a href="https://www.linkedin.com/in/amandaweisbrod"
+        >Connect with me on LinkedIn</a
+      >
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+
+      const fadeInElements = document.querySelectorAll(".fade-in-element");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target); // Optional: if you only want it to animate once
+            }
+          });
+        },
+        { threshold: 0.2 }
+      ); // Trigger when 20% of the element is visible
+
+      fadeInElements.forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>

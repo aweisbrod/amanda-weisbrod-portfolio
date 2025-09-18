@@ -1,0 +1,258 @@
+<!doctype html>
+
+<html>
+  <!-- BEGIN HEAD -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Dancing Lights | Amanda Weisbrod</title>
+    <meta name="description" content="A visual explanation of the Northern Lights phenomenon, designed in a child-friendly style to educate and inspire curiosity about natural wonders." />
+    <meta name="author" content="Amanda Weisbrod" />
+    <meta name="keywords" content="Amanda Weisbrod, Northern Lights, visual storytelling, education, children" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+
+    <!--  Google SEO -->
+    <link rel="canonical" href="https://www.amandaweisbrod.com/" />
+    <meta property="og:title" content="Amanda Weisbrod - Visual Storyteller" />
+    <meta
+      property="og:description"
+      content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://www.amandaweisbrod.com/images/hero-image.jpg"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style></style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
+    <!-- BEGIN NAVBAR -->
+   <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li class="submenu-item"><a href="freelance-services-infographics.html">Information Graphics</a></li>
+        <li class="submenu-item"><a href="freelance-services-video-editing.html">Video Editing</a></li>
+        <li class="submenu-item"><a href="freelance-services-editorial-design.html">Editorial Design</a></li>
+        <li class="submenu-item"><a href="freelance-services-branding.html">Branding</a></li>
+        <li class="submenu-item"><a href="freelance-services-illustration.html">Illustration</a></li>
+        <li class="submenu-item"><a href="freelance-services-writing.html">Writing</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank" rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile dropdown">
+          <button class="dropbtn" onclick="window.location.href='freelance-services.html'">Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html">Information Graphics</a>
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html">Editorial Design</a>
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="container">
+      <div class="portfolio-item">
+        <h2>Dancing Lights</h2>
+        <h3>
+          An explainer style infographic about the science behind the Northern
+          Lights
+        </h3>
+        <p>
+          This infographic visually explains the science behind the Northern
+          Lights, also known as the Aurora Borealis. It illustrates the complex
+          interplay of solar winds, magnetic fields, and atmospheric particles
+          that create this stunning natural phenomenon.
+        </p>
+
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/dancing-lights/dancing-lights-full-graphic.png"
+          alt="Final dancing lights infographic"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          This graphic was produced for an infographics course at Ohio
+          University. It is intended for a young audience (children 5-10 years
+          old) that is interested in science. (Amanda Weisbrod)
+        </p>
+      </div>
+      <br />
+      <div>
+        <h3>
+          ⭐ 2021 Society for News Design Student Design Contest (Third Place,
+          Infographics Category)
+        </h3>
+        <p>
+          <span class="dropcap">M</span>y role in this project was to decide on
+          a focus, research that focus, cultivate data, write all of the text,
+          layout the pages and design the infographic itself. I was inspired by
+          Highlights Magazine, which I loved as a child. I also watched several
+          different YouTube videos on the topic to see how others have attempted
+          to explain this phenomenon visually. The layout of this project gave
+          me some trouble, as I wanted it to flow organically, yet not confusing to
+          read. I believe, in the end, I achieved this goal.
+        </p>
+        <p>
+          I created everything in this graphic from the illustrations to the
+          text and data visualizations. This included researching the science
+          behind the Northern Lights and finding ways to visually represent
+          complex concepts in an engaging way. In the end, I learned a lot
+          myself about this phenomenon, and enjoyed working on a project aimed
+          towards kids.
+        </p>
+
+        <p>
+          <strong>Programs used:</strong> Adobe Illustrator, Adobe Photoshop,
+          Procreate
+        </p>
+        <hr class="part-divider" style="margin-top: 4rem" />
+        <h3>Process</h3>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/dancing-lights/dancing-lights-process01.png"
+          alt="First sketch for the Dancing Lights project. (Amanda Weisbrod)"
+          style="width: 100%; height: auto; margin-top: 0px"
+        />
+        <p class="caption">
+          My first and second drafts of The Dancing Lights project. (Amanda Weisbrod)
+        </p>
+        <img
+          class="portfolio-image"
+          src="../images/portfolio/dancing-lights/dancing-lights-process02.png"
+          alt="Second sketch for the Dancing Lights project. (Amanda Weisbrod)"
+          style="width: 100%; height: auto"
+        />
+        <p class="caption">
+          Drafts three and four of The Dancing Lights project. (Amanda Weisbrod)
+        </p>
+               <br />
+        <a href="absinthe-ritual.html" class="previous">&laquo; Previous</a>
+        <a href="under-the-gun.html" class="next">Next &raquo;</a>
+      </div>
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
+      <a href="https://www.behance.net/amandaweisbrod"
+        >View my work on Behance |
+      </a>
+      <a href="https://www.linkedin.com/in/amandaweisbrod"
+        >Connect with me on LinkedIn</a
+      >
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
