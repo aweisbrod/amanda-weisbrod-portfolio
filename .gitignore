@@ -63,6 +63,14 @@ jspm_packages/
 
 # Large media files
 *.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.m4v
+*.3gp
 *.psd
 video/
 videos/
