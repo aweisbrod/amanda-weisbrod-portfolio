@@ -67,9 +67,3 @@ jspm_packages/
 video/
 videos/
 
-# Large image files (over 5MB)
-images/collages/cherry_edit_dark.png
-images/portfolio/memories-of-home/memories-of-home-wireframe.png
-images/portfolio/memories-of-home/memories-of-home-list.png
-images/portfolio/illustrations/parasite.pdf
-images/portfolio/kennedy-center/kc-sketch02.png
