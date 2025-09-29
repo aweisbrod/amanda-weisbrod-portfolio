@@ -616,7 +616,7 @@ nav li:first-child {
 /* Submenu items in sidebar */
 .sidebar .submenu-item a {
   padding: 0 3.5rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
