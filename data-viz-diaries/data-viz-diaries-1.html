@@ -1,0 +1,409 @@
+<!doctype html>
+
+<html>
+  <!-- BEGIN HEAD -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Data Viz Diaries | Amanda Weisbrod</title>
+    <meta
+      name="description"
+      content="Amanda Weisbrod's blog on data visualization, sharing insights and reflections on key texts and concepts in the field."
+    />
+    <meta name="author" content="Amanda Weisbrod" />
+    <meta
+      name="keywords"
+      content="Amanda Weisbrod, visual designer, storyteller, portfolio, blog"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  jQuery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+    ></script>
+
+    <!--  Google SEO -->
+    <link rel="canonical" href="https://www.amandaweisbrod.com/" />
+    <meta property="og:title" content="Amanda Weisbrod - Visual Storyteller" />
+    <meta
+      property="og:description"
+      content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://aweisbrod.github.io/amanda-weisbrod-portfolio/images/headshot-2025.png"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style>
+      .page-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 1rem;
+      }
+
+      .page-subtitle {
+        font-size: 1.5rem;
+        color: #555;
+        margin-bottom: 6rem;
+      }
+      /* Page-specific: left-align entry images (override global centering) */
+      .entry-image {
+        margin: 60px 0 0 0;
+        display: block;
+      }
+
+      p {
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+    </style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://www.behance.net/amandaweisbrod"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile">
+          <a href="data-viz-diaries.html">Data Viz Diaries</a>
+        </li>
+        <li class="hideOnMobile dropdown">
+          <button
+            class="dropbtn"
+            onclick="window.location.href='freelance-services.html'"
+          >
+            Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html"
+              >Information Graphics</a
+            >
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html"
+              >Editorial Design</a
+            >
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-11 col-sm-12">
+          <h1 class="page-title">
+            Data Viz Diaries #1: The Visual Display of Quantitative Information
+          </h1>
+          <p class="page-subtitle">
+            Edward R. Tufte writes about the fundamental principles of data
+            visualization and the effective communication of quantitative
+            information through visual means.
+          </p>
+          <img
+            class="entry-image"
+            src="../images/data-viz-diaries/entry-1/visual-display-quantitative-info_tufte.jpg"
+            alt="An image of the cover of Edward Tufte's book The Visual Display of Quantitative Information"
+          />
+          <p class="caption">
+            An image of the cover of Edward Tufte's book The Visual Display of
+            Quantitative Information. (Amanda Weisbrod)
+          </p>
+          <br />
+          <p>
+            <span class="dropcap">T</span>his reading reflection is the first of
+            (hopefully) many in a series I’m calling Data Viz Diaries. I hope
+            you’ll find some entertainment in my ramblings and are inspired to
+            pick up each text yourself to expand your knowledge of visual
+            communication. Let’s jump in.
+          </p>
+          <br />
+          <hr />
+          <p>
+            In The Visualization of Quantitative Information, I found Tufte’s
+            voice to be technical yet welcoming, with some phrases actually
+            making me laugh out loud. “The only worse design than a pie chart is
+            several of them” (p. 178) was one of those phrases. He states pie
+            graphs are ineffective because tables are a better way to show exact
+            numbers in a small dataset. I was never a fan of tables until I read
+            his book, but it tracks, especially considering Alberto Cairo’s
+            approach to visualization techniques.
+          </p>
+
+          <p>
+            In a lecture I attended, Cairo referenced an excerpt from Tamara
+            Muzner’s Visual Analysis and Design to explain the most effective
+            ways of comparing information — position on a common scale was at
+            the top of the list, and volume (3D models) was at the bottom, with
+            angles (which is how pie charts compare data) coming in at number
+            four out of ten. While pie charts aren’t the absolute worst way to
+            communicate according to Muzner’s list, the information they display
+            can be better expressed through bar charts, or, as Tufte writes,
+            tables.
+          </p>
+          <img
+            class="entry-image"
+            src="../images/data-viz-diaries/entry-1/kramers-shelves_v004.png"
+            alt="A graphic showing the comparison of book cover colors between romance and horror genres. Out of 84 books, 26 romance book covers are blue, while out of 83 books, 47 horror covers are black."
+          />
+          <p class="caption">
+            A graphic I made about the book covers in a local D.C. bookstore,
+            featuring two pie graphs that could've been a bar chart or better
+            yet, a table. (Amanda Weisbrod)
+          </p>
+          <br />
+          <p>
+            I feel the urge to experiment more with tables in small datasets
+            from now on, perhaps embedding “sparklines” or small,
+            high-resolution graphics (p. 172) within to give them depth and a
+            way to easily compare trends. Tufte states that visual communication
+            is second nature to humans and can convey information in a fraction
+            of a second compared to words alone. Our eyes immediately search for
+            patterns and can determine variances in those patterns instinctively
+            as a result of our evolution. This is why visual communication is so
+            important — conveying data and stories in this way allows readers to
+            comprehend complex ideas at a glance. And for the more intricate
+            graphics, allow for exploration.
+          </p>
+          <p>
+            All in all, to me, tables could be great for small datasets if the
+            intention is for the reader to explore the exact numbers; otherwise,
+            graphical visualizations are better. It all depends on the purpose
+            of your design. “What are you trying to communicate? What are you
+            hoping your readers will learn?” These are the first questions I ask
+            myself when designing graphics, and the follow-up is “How can I make
+            this more interesting?”
+          </p>
+          <p>
+            I struggle with designing innovative graphics that break the rules.
+            I find myself leaning on bar charts and line graphs more often than
+            not. While I know there’s nothing wrong with these tried-and-true
+            approaches, I hope, in the future, to create more engaging and
+            revolutionary designs. But Tufte stresses it’s important not to let
+            the design get in the way of the data. He writes about “maximizing
+            data-ink,” or the practice of communicating as much information in
+            as little ink as possible by avoiding “chart-junk,” or non/redundant
+            data-ink. Examples of chart-junk include unintentional optical art,
+            the “dreaded” grid, and the self-promoting graphical duck.
+          </p>
+          <p>
+            A graphical duck is when a graphic is taken over by decoration. Once
+            I read the definition, this example came to mind:
+          </p>
+          <img
+            class="entry-image"
+            src="../images/data-viz-diaries/entry-1/diamonds-graph.jpg"
+            alt="An image of the cover of Edward Tufte's book The Visual Display of Quantitative Information"
+          />
+          <p class="caption">
+            A photograph of Nigel Holmes' "Diamonds were a girl's best friend"
+            graphic from Edward Tufte's book, Envisioning Information. (Amanda
+            Weisbrod)
+          </p>
+          <br />
+          <p>
+            Here, we see not only is this chart sexualizing data (weird), but
+            its decoration is getting in the way of communicating the point of
+            the graph: to visualize the trend of diamond purchases over time. It
+            also includes a dark, thick, dreaded grid in the form of fishnets
+            (again, weird). Instead, Tufte writes grids should usually be muted
+            or completely suppressed so they don’t compete with the data. Using
+            grey instead of black is a good practice, and one I try to
+            incorporate in my designs.
+          </p>
+          <p>
+            The grid and angle of the leg in this example also create an optical
+            illusion called a “moiré effect,” which causes vibration of the eye
+            and is generally painful to look at. Other examples of unintentional
+            optical art include using cross-hatching or slanted lines as a fill.
+            (Even though Tufte writes that patterns are chart-junk, I wonder if
+            it’s not all bad to include faint patterns if it helps with
+            accessibility, such as color blindness.)
+          </p>
+          <p>
+            Tufte includes an excerpt from Learning from Las Vegas, which covers
+            ducks in modern architecture: “It is alright to decorate
+            construction, but never to construct decoration” (p. 117). Even
+            though this quote is referring to architecture, it’s extremely
+            relevant to graphics design, which is, I’m sure, why Tufte included
+            it in his writing.
+          </p>
+          <img
+            class="entry-image"
+            src="../images/data-viz-diaries/entry-1/duck.jpg"
+            alt="An image of a building shaped like a duck, illustrating the concept of a graphical duck, taken by Edward Tufte."
+          />
+          <p class="caption">
+            Edward Tufte took this photograph of a building shaped like a duck to
+            illustrate the concept of a graphical duck. (Amanda Weisbrod)
+          </p>
+          <br />
+          <p>
+            The best ways to avoid chart-junk and design with intention are to
+            maximize the data-ink and data density of a display. To achieve
+            optimal data density, one should look at the number of entries in
+            the data matrix divided by the area of the data display. Tufte
+            writes that data-dense designs give control of the information over
+            to the readers, while data-thin displays move readers toward
+            ignorance and passivity.
+          </p>
+          <p>
+            The assumption that charts are for readers who find text to be too
+            difficult to understand results in designs that aim to entertain
+            rather than inform. “Contempt for graphics and their audience leads
+            to over-decorated and simplistic designs, tiny datasets and big
+            lies,” (p. XX), according to Tufte. He goes on to explain that the
+            skills, attitudes and organizational structure among those who
+            design and edit are the primary causes of inept graphics.
+          </p>
+          <p>
+            As this book was originally published in 1983 (I read the second
+            edition, which was released in 2001), I feel we’ve come a long way
+            in the field of data visualization, especially in the realm of news.
+            Most designs I see published in major news outlets are sophisticated
+            and explore data in meaningful ways, while avoiding chart-junk. I
+            believe visual graphics journalists are now more in tune with
+            statistics, and the myriad of intuitive tools available give easier
+            access to statisticians to design graphics. We see a melding of the
+            two professions in this case. I’d like to explore the trajectory of
+            the visual data journalist profession over time — when it first
+            emerged, and how it has boomed over time alongside the advancement
+            of technology, particularly design programs — but I feel that’s
+            another article to be written.
+          </p>
+          <p>
+            That’s all for now! Thanks for following along, and I’ll see you
+            next time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
+      <a href="https://www.behance.net/amandaweisbrod"
+        >View my work on Behance
+      </a>
+      <span> | </span>
+      <a href="https://www.linkedin.com/in/amandaweisbrod"
+        >Connect with me on LinkedIn</a
+      >
+    </footer>
+    <!-- END FOOTER -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.add("active");
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

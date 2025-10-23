@@ -57,91 +57,79 @@
     <meta
       property="og:description"
       content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
-    <!-- BEGIN NAVBAR -->
-    <nav>
-      <!-- Vertical Navigation -->
-      <ul class="sidebar">
-        <li class="close-button" onclick="hideSidebar()">
-          <a href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="26"
-              viewBox="0 -960 960 960"
-              width="26"
-              fill="white"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              /></svg
-          ></a>
-        </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li>
-          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
-            >Portfolio</a
-          >
-        </li>
-        <li><a href="resume.html">Resume</a></li>
-                <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
-        <li><a href="freelance-services.html">Freelance Services</a></li>
-        <li><a href="artwork.html">Artwork</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <!-- Horizontal Navigation -->
-      <ul>
-        <li><a href="index.html">Amanda Weisbrod</a></li>
-        <li class="hideOnMobile"><a href="about.html">About</a></li>
-        <li class="hideOnMobile">
-          <a
-            href="https://www.behance.net/amandaweisbrod"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Portfolio</a
-          >
-        </li>
-        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-        <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
-        <li class="hideOnMobile dropdown">
-          <button
-            class="dropbtn"
-            onclick="window.location.href='freelance-services.html'"
-          >
-            Freelance Services
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="freelance-services-infographics.html"
-              >Information Graphics</a
-            >
-            <a href="freelance-services-video-editing.html">Video Editing</a>
-            <a href="freelance-services-editorial-design.html"
-              >Editorial Design</a
-            >
-            <a href="freelance-services-branding.html">Branding</a>
-            <a href="freelance-services-illustration.html">Illustration</a>
-            <a href="freelance-services-writing.html">Writing</a>
-          </div>
-        </li>
-        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
-        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-        <li class="menu-button" onclick="showSidebar()">
-          <a href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="26"
-              viewBox="0 -960 960 960"
-              width="26"
-              fill="white"
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              /></svg
-          ></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- END NAVBAR -->
+    />
+    <meta
+      property="og:image"
+      content="https://www.amandaweisbrod.com/images/hero-image.jpg"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style>
+      /* Service Cards - Fixed 4:5 Aspect Ratio */
+      .service-card {
+        aspect-ratio: 4 / 5;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5px !important;
+        margin-right: 2.5px !important;
+        background-color: white;
+        border: 1px solid black !important;
+        color: black;
+        transition: all 0.3s ease;
+        transform: scale(1);
+        border-radius: 5px;
+      }
+
+      .service-card:hover,
+      .service-card:active {
+        transform: scale(1.05);
+        border: 2px solid transparent !important;
+      }
+
+      .service-card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 2rem;
+      }
+
+      .service-card .card-title {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        margin-bottom: 1rem;
+        flex-shrink: 0;
+      }
+
+      .service-card .card-text {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+
+      /* Hover effects for each service card */
+      #information-graphics:hover,
+      #information-graphics:active {
+        background-color: #c33173;
+        color: white;
+      }
+
+      #video-editing:hover,
+      #video-editing:active {
+        background-color: #f9a937;
+        color: white;
+      }
+
+      #editorial-design:hover,
+      #editorial-design:active {
+        background-color: #b3c44e;
         color: white;
       }
 
@@ -285,29 +273,8 @@
           >
         </li>
         <li><a href="resume.html">Resume</a></li>
+                <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
         <li><a href="freelance-services.html">Freelance Services</a></li>
-        <li class="submenu-item">
-          <a href="freelance-services-infographics.html"
-            >Information Graphics</a
-          >
-        </li>
-        <li class="submenu-item">
-          <a href="freelance-services-video-editing.html">Video Editing</a>
-        </li>
-        <li class="submenu-item">
-          <a href="freelance-services-editorial-design.html"
-            >Editorial Design</a
-          >
-        </li>
-        <li class="submenu-item">
-          <a href="freelance-services-branding.html">Branding</a>
-        </li>
-        <li class="submenu-item">
-          <a href="freelance-services-illustration.html">Illustration</a>
-        </li>
-        <li class="submenu-item">
-          <a href="freelance-services-writing.html">Writing</a>
-        </li>
         <li><a href="artwork.html">Artwork</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -323,9 +290,9 @@
             >Portfolio</a
           >
         </li>
-  <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-  <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
-  <li class="hideOnMobile dropdown">
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li class="hideOnMobile dropdown">
           <button
             class="dropbtn"
             onclick="window.location.href='freelance-services.html'"
@@ -365,6 +332,7 @@
       </ul>
     </nav>
     <!-- END NAVBAR -->
+
 
     <!--  Banner Image -->
     <div class="banner-image">

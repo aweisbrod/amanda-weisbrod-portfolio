@@ -134,6 +134,13 @@ a:hover {
   }
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin: 0 0 4rem;
+}
+
 .about-content {
   padding: 1.25rem;
   color: #fff;
