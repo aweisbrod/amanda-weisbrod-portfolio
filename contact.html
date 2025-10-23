@@ -56,79 +56,91 @@
     <meta
       property="og:description"
       content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
-    />
-    <meta
-      property="og:image"
-      content="https://aweisbrod.github.io/amanda-weisbrod-portfolio/images/headshot-2025.png"
-    />
-    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
-
-    <!--  Browser favicon -->
-    <link rel="icon" type="image/x-icon" href="images/v02_black_icon.png" />
-
-    <!-- BEGIN INTERNAL CSS -->
-    <style>
-      /* Success Modal Styles */
-      .success-modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-      }
-      
-      .success-modal-content {
-        background-color: white;
-        margin: 15% auto;
-        padding: 40px;
-        border-radius: 15px;
-        width: 90%;
-        max-width: 500px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        animation: modalSlideIn 0.3s ease-out;
-        position: relative;
-      }
-      
-      @keyframes modalSlideIn {
-        from {
-          opacity: 0;
-          transform: translateY(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-      .success-close {
-        color: #aaa;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      
-      .success-close:hover,
-      .success-close:focus {
-        color: #c33173;
-      }
-      
-      .success-icon {
-        font-size: 60px;
-        color: #b3c44e;
-        margin-bottom: 20px;
-      }
-      
-      .success-modal h2 {
-        color: #333;
-        margin-bottom: 15px;
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+                <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://www.behance.net/amandaweisbrod"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li class="hideOnMobile dropdown">
+          <button
+            class="dropbtn"
+            onclick="window.location.href='freelance-services.html'"
+          >
+            Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html"
+              >Information Graphics</a
+            >
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html"
+              >Editorial Design</a
+            >
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
         font-family: 'Playfair Display', serif;
       }
       
@@ -377,8 +389,9 @@
             >Portfolio</a
           >
         </li>
-        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-        <li class="hideOnMobile dropdown">
+  <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+  <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+  <li class="hideOnMobile dropdown">
           <button
             class="dropbtn"
             onclick="window.location.href='freelance-services.html'"

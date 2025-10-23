@@ -56,79 +56,91 @@
     <meta
       property="og:description"
       content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
-    />
-    <meta
-      property="og:image"
-      content="https://aweisbrod.github.io/amanda-weisbrod-portfolio/images/headshot-2025.png"
-    />
-    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
-
-    <!--  Browser favicon -->
-    <link rel="icon" type="image/x-icon" href="images/v02_black_icon.png" />
-
-    <!-- BEGIN INTERNAL CSS -->
-    <style>
-      body {
-        background-color: black;
-      }
-
-      .background-image {
-        background-image:
-          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-          url(images/tarot-background.jpg);
-        background-repeat: repeat-y;
-        background-size: contain;
-        margin: 0;
-        padding: 0;
-      }
-
-      .resume-header {
-        margin: 20px 40px;
-        color: white;
-        padding-right: 60%;
-      }
-
-      .resume-header h2 {
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .resume-header h3 {
-        line-height: 20px;
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-
-      /* The actual timeline (the vertical ruler) */
-      .timeline {
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      /* The actual timeline (the vertical ruler) */
-      .timeline::after {
-        content: "";
-        position: absolute;
-        width: 6px;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        margin-left: -3px;
-        z-index: 0;
-      }
-
-      /* Container around content */
-      .timeline-container {
-        padding: 10px 40px;
-        position: relative;
-        background-color: inherit;
-        width: 50%;
-      }
-
-      /* The circles on the timeline */
+    <!-- BEGIN NAVBAR -->
+    <nav>
+      <!-- Vertical Navigation -->
+      <ul class="sidebar">
+        <li class="close-button" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="https://www.behance.net/amandaweisbrod" target="_blank"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="resume.html">Resume</a></li>
+                <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li><a href="freelance-services.html">Freelance Services</a></li>
+        <li><a href="artwork.html">Artwork</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Horizontal Navigation -->
+      <ul>
+        <li><a href="index.html">Amanda Weisbrod</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a
+            href="https://www.behance.net/amandaweisbrod"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Portfolio</a
+          >
+        </li>
+        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+        <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li class="hideOnMobile dropdown">
+          <button
+            class="dropbtn"
+            onclick="window.location.href='freelance-services.html'"
+          >
+            Freelance Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="freelance-services-infographics.html"
+              >Information Graphics</a
+            >
+            <a href="freelance-services-video-editing.html">Video Editing</a>
+            <a href="freelance-services-editorial-design.html"
+              >Editorial Design</a
+            >
+            <a href="freelance-services-branding.html">Branding</a>
+            <a href="freelance-services-illustration.html">Illustration</a>
+            <a href="freelance-services-writing.html">Writing</a>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END NAVBAR -->
       .timeline-container::after {
         content: "";
         position: absolute;
@@ -303,8 +315,9 @@
             >Portfolio</a
           >
         </li>
-        <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-        <li class="hideOnMobile dropdown">
+  <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
+  <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+  <li class="hideOnMobile dropdown">
           <button
             class="dropbtn"
             onclick="window.location.href='freelance-services.html'"

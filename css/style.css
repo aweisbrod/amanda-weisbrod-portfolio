@@ -643,8 +643,8 @@ nav li:first-child {
   margin-top: 4rem;
 }
 
-/* Nav bar hides on screens less than 884px wide */
-@media (max-width: 884px) {
+/* Nav bar hides on screens less than 1000px wide */
+@media (max-width: 1000px) {
   .hideOnMobile {
     display: none;
   }
