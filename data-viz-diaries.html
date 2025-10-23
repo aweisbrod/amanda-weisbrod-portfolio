@@ -62,6 +62,46 @@
     <meta
       property="og:description"
       content="Explore Amanda Weisbrod's portfolio showcasing her work as a visual storyteller, journalist, and data visualization designer."
+    />
+    <meta
+      property="og:image"
+      content="https://aweisbrod.github.io/amanda-weisbrod-portfolio/images/headshot-2025.png"
+    />
+    <meta property="og:url" content="https://www.amandaweisbrod.com/" />
+
+    <!--  Browser favicon -->
+    <link rel="icon" type="image/x-icon" href="images/v02_black_icon.png" />
+
+    <!-- BEGIN INTERNAL CSS -->
+    <style>
+      .container {
+        height: 100vh;
+      }
+
+      .page-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 1rem;
+      }
+
+      .page-subtitle {
+        font-size: 1.5rem;
+        color: #555;
+        margin-bottom: 6rem;
+      }
+      /* Page-specific: left-align entry images (override global centering) */
+      .entry-image {
+        margin: 0;
+        display: block;
+      }
+    </style>
+    <!-- END INTERNAL CSS -->
+  </head>
+  <!-- END HEAD -->
+
+  <!-- BEGIN BODY -->
+  <body>
     <!-- BEGIN NAVBAR -->
     <nav>
       <!-- Vertical Navigation -->
@@ -88,7 +128,7 @@
           >
         </li>
         <li><a href="resume.html">Resume</a></li>
-                <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
         <li><a href="freelance-services.html">Freelance Services</a></li>
         <li><a href="artwork.html">Artwork</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -106,7 +146,9 @@
           >
         </li>
         <li class="hideOnMobile"><a href="resume.html">Resume</a></li>
-        <li class="hideOnMobile"><a href="data-viz-diaries.html">Data Viz Diaries</a></li>
+        <li class="hideOnMobile">
+          <a href="data-viz-diaries.html">Data Viz Diaries</a>
+        </li>
         <li class="hideOnMobile dropdown">
           <button
             class="dropbtn"
@@ -147,41 +189,7 @@
       </ul>
     </nav>
     <!-- END NAVBAR -->
-            Freelance Services
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="freelance-services-infographics.html"
-              >Information Graphics</a
-            >
-            <a href="freelance-services-video-editing.html">Video Editing</a>
-            <a href="freelance-services-editorial-design.html"
-              >Editorial Design</a
-            >
-            <a href="freelance-services-branding.html">Branding</a>
-            <a href="freelance-services-illustration.html">Illustration</a>
-            <a href="freelance-services-writing.html">Writing</a>
-          </div>
-        </li>
-        <li class="hideOnMobile"><a href="artwork.html">Artwork</a></li>
-        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-        <li class="menu-button" onclick="showSidebar()">
-          <a href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="26"
-              viewBox="0 -960 960 960"
-              width="26"
-              fill="white"
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              /></svg
-          ></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- END NAVBAR -->
+
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-11 col-sm-12">
@@ -190,16 +198,36 @@
             A collection of my thoughts, processes, and learnings in the world
             of data visualization.
           </p>
+
+          <!--  Data Viz Diaries #1: The Visual Display of Quantitative Information -->
+          <a href="data-viz-diaries-1.html">
+            <h3>
+              Data Viz Diaries #1: The Visual Display of Quantitative
+              Information
+            </h3>
+            <img
+              class="entry-image"
+              src="images/data-viz-diaries/entry-1/visual-display-quantitative-info_tufte.jpg"
+              alt="An image of the cover of Edward Tufte's book The Visual Display of Quantitative Information"
+            />
+            <br />
+            <p class="description">
+              This entry reflects on the principles outlined in Edward Tufte's
+              seminal work, emphasizing the importance of clarity, precision,
+              and efficiency in presenting data.
+            </p>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- BEGIN FOOTER -->
-    <footer class="footer" style="margin-top: 0">
+    <footer class="footer">
       <p>&copy; 2025 Weisbrod Visuals, LLC. All rights reserved.</p>
       <a href="https://www.behance.net/amandaweisbrod"
-        >View my work on Behance |
+        >View my work on Behance
       </a>
+      <span> | </span>
       <a href="https://www.linkedin.com/in/amandaweisbrod"
         >Connect with me on LinkedIn</a
       >
